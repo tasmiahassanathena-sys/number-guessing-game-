@@ -1,0 +1,36 @@
+print("welcome to the number guessing game!")
+print("guess the number between 1 and 50")
+random_number = int(input("enter your guess: "))
+if random_number == 25:
+    print(" yes! you win level 1")
+else:
+    print("sorry! you lose level 1")
+print("level 2")
+print("guess the number by the list given below")
+numbers_list = [6, 7, 9, 8, 10]
+print("numbers list: ", numbers_list)
+print("what do you think the number is?")
+input_number = int(input("enter your guess: "))
+if input_number in numbers_list:
+     print("yay! you win level 2, congratulations!!")
+else:
+    print("sorry you lose level 2, better luck next time!")
+    print("its getting harder now, guess the number from the list below")
+numbers_list = [80, 40, 70, 60]
+print("numbers_list: ", numbers_list)
+input_number = int(input("enter your guess: "))    
+if input_number in numbers_list:
+    print("yay! you win level 3! good job!!")
+else:
+  print("sorry you lose level 3, game over!")
+play_again = input("do you want to play again? (yes/no): ").lower()
+if play_again == "yes":
+    print("welcome back to the number guessing game!")
+    print("guess the number between 1 and 50")
+    random_number = int(input("enter your guess:"))
+    import random
+    random_number = random.randint(1, 50)
+    if random_number == 28:
+        print("yes! you win")
+    else:
+            print("sorry! you lose")
